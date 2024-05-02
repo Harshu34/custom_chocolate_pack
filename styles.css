@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#chocolates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chocolate {
+    text-align: center;
+    margin: 10px;
+}
+
+.chocolate img {
+    width: 150px;
+    height: 150px;
+}
+
+#cart {
+    margin-top: 50px;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#cart-items li span {
+    margin-left: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#cart-items img {
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+#cart {
+    margin-top: 100px;
+    position: relative; 
+}
+
+#cart-items {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+}
+
+.chocolate-image {
+    width: 250px; 
+    height: auto;
+    position: absolute;
+   
+    top: calc(50% + 30px); 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+#total-price {
+    margin-bottom: 30px;
+}
+.price {
+    margin-bottom: 150px;
+}
